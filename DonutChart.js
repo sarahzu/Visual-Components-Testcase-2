@@ -62,5 +62,4 @@ class DonutChart extends React.Component {
     }
 }
 
-const domContainer = document.querySelector('#app');
-ReactDOM.render(React.createElement(DonutChart), domContainer);
+export default DonutChart;

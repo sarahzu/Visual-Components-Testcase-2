@@ -9,7 +9,9 @@ import ReactDOM from "react-dom";
  * Not valid syntax to be recognized as visual component
  *
  * @param something
- * @props anotherthing
+ * @visComp 
+ * @props {type} type
+ * @props {boolean} data labels enabled
  */
 class DonutChart extends React.Component {
 
@@ -19,10 +21,10 @@ class DonutChart extends React.Component {
         this.state = {
             options: {
                 dataLabels: {
-                    enabled: false
+                    enabled: this.props.type //false
                 },
                 fill: {
-                    type: 'gradient',
+                    type: this.props.type, //'gradient'
                 },
                 legend: {
                     formatter: function(val, opts) {

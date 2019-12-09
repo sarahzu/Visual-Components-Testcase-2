@@ -10,8 +10,8 @@ import ReactDOM from "react-dom";
  *
  * @param something
  * @visComp 
- * @props {string} type
- * @props {boolean} data labels enabled
+ * @props {string} type [gradient]
+ * @props {boolean} dataLabelsEnabled [true]
  */
 class DonutChart extends React.Component {
 

@@ -2,13 +2,14 @@ import React from "react";
 import ReactApexChart from "react-apexcharts";
 import ReactDOM from "react-dom";
 
-// code taken from: https://apexcharts.com/react-chart-demos/pie-charts/gradient-donut/
+// code taken and modified from: https://apexcharts.com/react-chart-demos/pie-charts/gradient-donut/
 // last visited: 9.11.19
 
 /**
- * Not valid syntax to be recognized as visual component
+ * Donut Chart
  *
  * @param something
+ * 
  * @visComp 
  * @props {string} type [gradient]
  * @props {boolean} dataLabelsEnabled [true]
@@ -21,10 +22,10 @@ class DonutChart extends React.Component {
         this.state = {
             options: {
                 dataLabels: {
-                    enabled: this.props.type //false
+                    enabled: this.props.type 
                 },
                 fill: {
-                    type: this.props.type, //'gradient'
+                    type: this.props.type, 
                 },
                 legend: {
                     formatter: function(val, opts) {
@@ -49,15 +50,9 @@ class DonutChart extends React.Component {
 
     render() {
         return (
-
-
-
             <div id="chart">
-            <ReactApexChart options={this.state.options} series={this.state.series} type="donut" width="380" />
-          </div>
-
-
-
+                <ReactApexChart options={this.state.options} series={this.state.series} type="donut" width="380" />
+            </div>
         );
     }
 }

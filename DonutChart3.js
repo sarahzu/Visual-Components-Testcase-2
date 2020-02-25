@@ -14,7 +14,7 @@ import ReactDOM from "react-dom";
  * @props {string} type [gradient]
  * @props {boolean} dataLabelsEnabled [true]
  */
-class DonutChart extends React.Component {
+class DonutChart3 extends React.Component {
 
     constructor(props) {
         super(props);
@@ -58,4 +58,4 @@ class DonutChart extends React.Component {
 }
 
 
-export default DonutChart;
+export default DonutChart3;

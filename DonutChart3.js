@@ -59,3 +59,5 @@ class DonutChart3 extends React.Component {
 
 
 export default DonutChart3;
+
+
